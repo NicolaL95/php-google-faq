@@ -58,9 +58,27 @@ $questions = array (
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>Google faq</title>
 </head>
 <body>
+    <header class="d-flex flex-column b-bottom">
+    <div class="logo d-flex">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png" alt="logo Google">
+        <h2>Privacy e termini</h2>
+    </div>
+    <nav class="d-flex">
+        <a href="">Introduzione</a>
+        <a href="">Norme sulla privacy</a>
+        <a href="">Termini di servizio</a>
+        <a href="">Tecnologie</a>
+        <a href="">Domande frequenti</a>
+    </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
 <?php
 $keys=array_keys($questions);
 foreach($questions as $key => $question)
@@ -70,8 +88,9 @@ foreach ($question as $reply){
     echo "<p>",$reply,"</p>";
 }
 }
-
-
 ?>
+</div>
+</div>
+</main>
 </body>
 </html>

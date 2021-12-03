@@ -1,0 +1,24 @@
+header{
+    padding-left: 20px;
+    border-bottom: 1px solid gray;
+}
+
+.logo{
+    gap: 20px;
+    align-items: center;
+}
+
+.logo img{
+       width: 70px;
+    height: 30px;
+}
+
+nav{
+    gap: 15px;
+    padding-bottom: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
