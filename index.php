@@ -63,6 +63,15 @@ $questions = array (
 <body>
 <?php
 $keys=array_keys($questions);
+foreach($questions as $key => $question)
+{
+echo "<h2>",$key,"</h2>";
+foreach ($question as $reply){
+    echo "<p>",$reply,"</p>";
+}
+}
+
+
 ?>
 </body>
 </html>
